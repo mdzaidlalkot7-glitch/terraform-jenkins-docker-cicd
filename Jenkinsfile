@@ -1,4 +1,6 @@
+cd ~/terraform-jenkins-docker-cicd
 
+cat > Jenkinsfile <<'EOF'
 pipeline {
     agent any
 
@@ -31,4 +33,4 @@ pipeline {
         }
     }
 }
-
+EOF
