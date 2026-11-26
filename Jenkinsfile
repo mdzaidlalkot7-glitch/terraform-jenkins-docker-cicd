@@ -1,6 +1,4 @@
-cd ~/terraform-jenkins-docker-cicd
 
-cat > Jenkinsfile <<'EOF'
 pipeline {
     agent any
 
@@ -28,9 +26,8 @@ pipeline {
 
         stage('Verify Deployment') {
             steps {
-                sh "curl -f http://localhost/"
+                sh 'curl -f http://localhost/'
             }
         }
     }
 }
-EOF
