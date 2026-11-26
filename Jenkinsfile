@@ -28,7 +28,7 @@ pipeline {
 
         stage('Verify Deployment') {
             steps {
-                sh 'curl -f http://localhost/'
+                sh "curl -f http://localhost/"
             }
         }
     }
